@@ -16,6 +16,8 @@
  *   Comparator:  comparator.compare(list[i], list[i+1]) > 0
  *
  * Everything else (the loops, the swaps, the logic) stays the same.
+ * 
+ * @author Gabriel Cardenas
  */
 
 import java.util.Arrays;
@@ -66,7 +68,7 @@ public class Exercise23_01 {
             while (k >= 0 && comparator.compare(list[k], currentElement) > 0) {
                 list[k + 1] = list[k];  // shift right
                 k--;
-        }
+            }
 
             // Insert the element into its correct position
             list[k + 1] = currentElement;
